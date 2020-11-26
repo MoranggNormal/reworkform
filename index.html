@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="haha.css">
+  <script src="js.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Biologia Marinha Online</h1>
+      <p id="description" class="description text-center">
+        Para uma maior experiência e interação com profissionais em nossa plataforma, por favor, realize seu cadastro.
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Nome</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Digite seu nome"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Digite seu Email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="password-label" for="password">Senha</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="form-control"
+          placeholder="Digite uma senha"
+          required
+        />
+        
+      </div>
+
+      <div class="form-group">
+        <label id="password-label" for="password">Confirme sua senha</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="form-control"
+          placeholder="Digite novamente sua senha"
+          required
+        />
+        
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Telefone<span class="clue">(opcional)</span></label
+        >
+        <input
+          type="tel"
+          name="age"
+          id="number"
+          class="form-control"
+          placeholder="Digite seu número de telefone"
+        />
+      </div>
+
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Idade</label
+        >
+        <input
+          type="date"
+          name="age"
+          id="number"
+          min="01"
+          class="form-control"
+        />
+      </div>
+      
+      <div class="form-group">
+        <p>Sexo</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="Masculino"
+            type="radio"
+            class="input-radio"
+            checked
+          />Masculino</label
+        >
+        <label>
+          <input
+            name="user-recommend"
+            value="Feminino"
+            type="radio"
+            class="input-radio"
+          />Feminino</label
+        >
+  
+        <label
+          ><input
+            name="user-recommend"
+            value="Outro"
+            type="radio"
+            class="input-radio"
+          />Outro</label
+        >
+      </div>
+  
+      <div class="form-group">
+        <p>
+          Em que situação de aprendizado você se encontra?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Selecione uma opção</option>
+          <option value="fundamental">Ensino Fundamental</option>
+          <option value="medio">Ensino Médio</option>
+          <option value="faculdade">Faculdade</option>
+          <option value="lecionador">Sou Professor(a)</option>
+          <option value="vagabundo">Sou Vagabundo(a)</option>
+          <option value="nenhuma">Nenhuma das alternativas acima</option>
+          
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>
+          Com qual(is) finalidade(s) você quer aprender sobre Biologia Marinha?
+        </p>
+  
+        <label
+          ><input
+            name="prefer"
+            value="Apenas curiosidade"
+            type="checkbox"
+            class="input-checkbox"
+          />Apenas curiosidade</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="Estudos"
+            type="checkbox"
+            class="input-checkbox"
+          />Estudos</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Projeto escolar"
+            type="checkbox"
+            class="input-checkbox"
+          />Projeto escolar</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="challenges"
+            type="checkbox"
+            class="input-checkbox"
+          />Carreira profissional</label
+        >
+
+      </div>
+
+      <div class="form-group">
+        <p>
+          Gostaria de receber notícias via email?
+        </p>
+  
+        <label
+          ><input
+            name="prefer"
+            value="yes"
+            type="radio"
+            class="input-radio"
+          />Sim, gostaria</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="no"
+            type="radio"
+            class="input-radio"
+          />Não, obrigado</label
+        >
+        </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+
+
+    </form>
+  </div>
+  
+
+</body>
+</html>
